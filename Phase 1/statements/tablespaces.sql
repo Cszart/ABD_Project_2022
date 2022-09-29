@@ -1,9 +1,17 @@
 -- Tablespace para las tablas
+DROP TABLESPACE ts_tablas
+INCLUDING CONTENTS AND DATAFILES
+CASCADE CONSTRAINTS;
+
 CREATE TABLESPACE ts_tablas
 DATAFILE 'df_tablas.dbf'
-SIZE 2m;
+SIZE 8m;
 
 -- Tablespace para los indices
+DROP TABLESPACE ts_indices
+INCLUDING CONTENTS AND DATAFILES
+CASCADE CONSTRAINTS;
+
 CREATE TABLESPACE ts_indices
 DATAFILE 'df_indices.dbf'
-SIZE 2m;
+SIZE 4m;
