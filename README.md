@@ -25,9 +25,11 @@ se debe referir.
 
 8. Insertar en la tabla area de conocimiento -- insert_tables.sql
 
-9. Cerrar sesion como abdUser
+9. Revocar el create session del abdUser -- create_user.sql
 
-   1. Iniciar sesion como organizador
+   1. Cerrar sesion como abdUser
+
+   2. Iniciar sesion como organizador
 
 10. Insertar las tablas que tiene permitido
 
