@@ -17,7 +17,9 @@ se debe referir.
 
 6. Crear tablas -- create_tables.sql
 
-   1. Crear views -- views.sql
+   1. Crear indices -- create_index.sql
+
+   2. Crear views -- views.sql
 
 7. Crear los roles -- create_roles.sql
 
