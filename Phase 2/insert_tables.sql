@@ -1,4 +1,4 @@
--- Inserciones minimas --
+-- Inserciones minimas para un AÑO --
 -- Insert values into tables
 
 -- Insertar universidades
