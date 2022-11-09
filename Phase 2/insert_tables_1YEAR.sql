@@ -1,247 +1,98 @@
 -- Inserciones minimas para un AÑO --
--- Insert values into tables
 
--- Insertar universidades
-INSERT INTO universidad -- 1
-(nombre, fecha_creacion, acronimo,descripcion)
-VALUES(
-    'Universidad Central de Venezuela',
-    '22/12/1721',
-    'UCV',
-    'Descripcion'
-);
-INSERT INTO universidad -- 2
-(nombre, fecha_creacion, acronimo,descripcion)
-VALUES(
-    'Universidad Simon Bolivar',
-    '22/12/1721',
-    'USB',
-    'Descripcion'
-);
-INSERT INTO universidad -- 3
-(nombre, fecha_creacion, acronimo,descripcion)
-VALUES(
-    'Universidad Catolica Andres Bello',
-    '22/12/1721',
-    'UCAB',
-    'Descripcion'
-);
-
--- Insertar usuarios
-INSERT INTO usuario -- 1
+-- Personas
+INSERT INTO usuario -- 5
 (correo, nombre, apellido, telefono, direccion, contrasena, type_user)
 VALUES(
-    'silvio@silvio.com',
-    'silvio',
-    'pestana',
-    '+58123456789',
-    'caracas, venezuela',
-    'contra1',
-    'expositor'
-);
-INSERT INTO usuario -- 2
-(correo, nombre, apellido, telefono, direccion, contrasena, type_user)
-VALUES(
-    'justin@justin.com',
-    'justin',
-    'quiles',
+    'maria@maria.com',
+    'maria',
+    'migos',
     '+58987645321',
     'caracas, venezuela',
-    'contra2',
-    'expositor'
+    'contra',
+    'participante'
 );
-INSERT INTO usuario -- 3
+INSERT INTO usuario -- 6
 (correo, nombre, apellido, telefono, direccion, contrasena, type_user)
 VALUES(
-    'cesar@cesar.com',
-    'cesar',
+    'carlos@carlos.com',
+    'carlos',
+    'pharrell',
+    '+58987645321',
+    'caracas, venezuela',
+    'contra',
+    'participante'
+);
+INSERT INTO usuario -- 7
+(correo, nombre, apellido, telefono, direccion, contrasena, type_user)
+VALUES(
+    'jesus@jesus.com',
+    'jesus',
+    'durran',
+    '+58987645321',
+    'caracas, venezuela',
+    'contra',
+    'participante'
+);
+INSERT INTO usuario -- 8
+(correo, nombre, apellido, telefono, direccion, contrasena, type_user)
+VALUES(
+    'jessica@jessica.com',
+    'jessica',
     'apellido',
-    '+584241712124',
-    'caracas, venezuela',
-    'contra3',
-    'participante'
-);
-INSERT INTO usuario -- 4
-(correo, nombre, apellido, telefono, direccion, contrasena, type_user)
-VALUES(
-    'edwin@edwin.com',
-    'edwin',
-    'quiles',
     '+58987645321',
     'caracas, venezuela',
-    'contra4',
+    'contra',
     'participante'
 );
 
--- Insertar areas de conocimiento
-INSERT INTO area_conocimiento -- 1
-(nombre)
+INSERT INTO usuario -- 9
+(correo, nombre, apellido, telefono, direccion, contrasena, type_user)
 VALUES(
-    'Tecnologia'
+    'jane@jane.com',
+    'jane',
+    'fuentes',
+    '+58987645321',
+    'caracas, venezuela',
+    'contra',
+    'expositor'
 );
-INSERT INTO area_conocimiento -- 2
-(nombre)
+INSERT INTO usuario -- 10
+(correo, nombre, apellido, telefono, direccion, contrasena, type_user)
 VALUES(
-    'Ecologia'
-);
-INSERT INTO area_conocimiento -- 3
-(nombre)
-VALUES(
-    'Arte'
-);
-INSERT INTO area_conocimiento -- 4
-(nombre)
-VALUES(
-    'Criptomoneda'
-);
-INSERT INTO area_conocimiento -- 5
-(nombre)
-VALUES(
-    'Educacion'
-);
-INSERT INTO area_conocimiento -- 6
-(nombre)
-VALUES(
-    'Musica'
+    'jolene@jolene.com',
+    'jolene',
+    'stripes',
+    '+58987645321',
+    'caracas, venezuela',
+    'contra',
+    'expositor'
 );
 
-INSERT INTO area_conocimiento -- 7
-(nombre)
-VALUES(
-    'Derecho'
-);
-INSERT INTO area_conocimiento -- 8
-(nombre)
-VALUES(
-    'Filosofia'
-);
-INSERT INTO area_conocimiento -- 9
-(nombre)
-VALUES(
-    'Comunicacion'
-);
-INSERT INTO area_conocimiento -- 10
-(nombre)
-VALUES(
-    'Salud'
-);
-
--- Insertar eventos
--- Eventos validos
-INSERT INTO evento -- 1
+-- eventos
+INSERT INTO evento -- 10
 (nombre, fecha_inicio, fecha_fin, id_area)
 VALUES(
-    'Evento tecnologico 2019',
-    '10/01/2019',
-    '15/01/2019',
+    'Evento tecnologico 2022',
+    '10/01/2022',
+    '15/01/2022',
     1
 );
-INSERT INTO evento -- 2
+INSERT INTO evento -- 11
 (nombre, fecha_inicio, fecha_fin, id_area)
 VALUES(
-    'Evento tecnologico 2021',
-    '10/02/2021',
-    '15/02/2021',
-    1
-);
-INSERT INTO evento -- 3
-(nombre, fecha_inicio, fecha_fin, id_area)
-VALUES(
-    'Evento Filosofia 2019',
-    '10/03/2019',
-    '15/03/2019',
-    8
-);
-INSERT INTO evento -- 4
-(nombre, fecha_inicio, fecha_fin, id_area)
-VALUES(
-    'Evento Filosofia 2020',
-    '10/03/2020',
-    '15/03/2020',
-    8
-);
-INSERT INTO evento -- 5
-(nombre, fecha_inicio, fecha_fin, id_area)
-VALUES(
-    'Evento Filosofia 2021',
-    '10/03/2021',
-    '15/03/2021',
-    8
-);
-INSERT INTO evento -- 6
-(nombre, fecha_inicio, fecha_fin, id_area)
-VALUES(
-    'Evento Arte 2019',
-    '10/03/2019',
-    '15/03/2019',
+    'Evento Arte 2022',
+    '10/03/2022',
+    '15/03/2022',
     3
 );
-INSERT INTO evento -- 7
+INSERT INTO evento -- 12
 (nombre, fecha_inicio, fecha_fin, id_area)
 VALUES(
-    'Evento Arte 2021',
-    '10/03/2021',
-    '15/03/2021',
-    3
-);
-INSERT INTO evento -- 8
-(nombre, fecha_inicio, fecha_fin, id_area)
-VALUES(
-    'Evento Musica 2020',
-    '10/03/2020',
-    '15/03/2020',
-    6
-);
-INSERT INTO evento -- 9
-(nombre, fecha_inicio, fecha_fin, id_area)
-VALUES(
-    'Evento Ecologia 2020',
-    '10/03/2020',
-    '15/03/2020',
-    2
-);
-
--- Insertar empresas
--- Empresas validas
-INSERT INTO empresa -- 1
-(nombre, direccion, telefono, tipo)
-VALUES(
-    'CocaCola',
-    'Direccion 1',
-    '+58CocaCola',
-    'privada'
-);
-INSERT INTO empresa -- 2
-(nombre, direccion, telefono, tipo)
-VALUES(
-    'Digimart',
-    'Direccion 2',
-    '+58DigiMart',
-    'privada'
-);
-INSERT INTO empresa -- 3
-(nombre, direccion, telefono, tipo)
-VALUES(
-    'Capcom',
-    'Direccion 3',
-    '+58Capcom',
-    'privada'
-);
-INSERT INTO empresa -- 4
-(nombre, direccion, telefono, tipo)
-VALUES(
-    'Global museum',
-    'Direccion 4',
-    '+58GlobalMuseum',
-    'publica'
-);
-INSERT INTO empresa -- 5
-(nombre, direccion, telefono, tipo)
-VALUES(
-    'FundaVen',
-    'Direccion 5',
-    '+58FundaVen',
-    'publica'
+    'Evento Salud 2022',
+    '10/08/2022',
+    '15/08/2022',
+    10
 );
 
 -- Relaciones --
@@ -251,85 +102,63 @@ INSERT INTO rel_univ_usuario
 (id_univ, id_usuario, fecha_ingreso)
 VALUES(
     1, -- UCV
-    1, -- Silvio
-    '01/01/2017'
-);
-INSERT INTO rel_univ_usuario
-(id_univ, id_usuario, fecha_ingreso)
-VALUES(
-    2, -- USB
-    2, -- Justin
-    '01/01/2018'
+    5, -- maria
+    '01/01/2021'
 );
 INSERT INTO rel_univ_usuario
 (id_univ, id_usuario, fecha_ingreso)
 VALUES(
     1, -- UCV
-    3, -- Cesar
-    '01/01/2020'
+    6, -- carlos
+    '01/01/2021'
+);
+INSERT INTO rel_univ_usuario
+(id_univ, id_usuario, fecha_ingreso)
+VALUES(
+    2, -- USB
+    7, -- jesus
+    '01/01/2021'
+);
+INSERT INTO rel_univ_usuario
+(id_univ, id_usuario, fecha_ingreso)
+VALUES(
+    2, -- USB
+    8, -- jessica
+    '01/01/2021'
 );
 INSERT INTO rel_univ_usuario
 (id_univ, id_usuario, fecha_ingreso)
 VALUES(
     3, -- UCAB
-    4, -- Edwin
-    '01/01/2017'
+    9, -- jane
+    '01/01/2021'
+);
+INSERT INTO rel_univ_usuario
+(id_univ, id_usuario, fecha_ingreso)
+VALUES(
+    1, -- UCV
+    10, -- jolene
+    '01/01/2021'
 );
 
 -- Evento / Univ
 INSERT INTO rel_evento_univ 
 (id_univ, id_evento)
 VALUES(
-    1, -- UCV
-    1 -- Evento de tecnologia 2019
-);
-INSERT INTO rel_evento_univ 
-(id_univ, id_evento)
-VALUES(
-    2, -- USB
-    2 -- Evento de tecnologia 2021
-);
-INSERT INTO rel_evento_univ 
-(id_univ, id_evento)
-VALUES(
-    1, -- UCV
-    3 -- Evento Filosofia 2019
-);
-INSERT INTO rel_evento_univ 
-(id_univ, id_evento)
-VALUES(
-    2, -- USB
-    4 -- Evento Filosofia 2020
-);
-INSERT INTO rel_evento_univ 
-(id_univ, id_evento)
-VALUES(
     3, -- UCAB
-    5 -- Evento Filosofia 2021
-);
-INSERT INTO rel_evento_univ 
-(id_univ, id_evento)
-VALUES(
-    1, -- UCV
-    6 -- Evento Arte 2019
-);
-INSERT INTO rel_evento_univ 
-(id_univ, id_evento)
-VALUES(
-    1, -- UCV
-    7 -- Evento Arte 2021
+    10 -- Evento de tecnologia 2022
 );
 INSERT INTO rel_evento_univ 
 (id_univ, id_evento)
 VALUES(
     2, -- USB
-    8 -- Evento Musica 2020
+    11 -- Evento de Arte 2022
 );
 INSERT INTO rel_evento_univ 
 (id_univ, id_evento)
 VALUES(
-    3, -- UCAB
-    9 -- Evento Ecologia 2020
+    1, -- UCV
+    12 -- Evento de Salud 2022
 );
 
 -- Evento / Empresa
@@ -337,41 +166,41 @@ INSERT INTO rel_evento_empresa
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     1, -- CocaCola
-    1, -- Evento de Tecnologia 2019
-    5000,
-    '05/01/2019'
+    10, -- Evento de tecnologia 2022
+    2100,
+    '05/01/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     2, -- Digimart
-    1, -- Evento de Tecnologia 2019
+    10, -- Evento de tecnologia 2022
     2500,
-    '06/01/2019'
+    '06/01/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     3, -- Capcom
-    1, -- Evento de Tecnologia 2019
+    10, -- Evento de tecnologia 2022
     1234,
-    '05/01/2019'
+    '07/01/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     4, -- Global museum
-    1, -- Evento de Tecnologia 2019
+    10, -- Evento de tecnologia 2022
     500,
-    '03/01/2019'
+    '08/01/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     5, -- FundaVen
-    1, -- Evento de Tecnologia 2019
+    10, -- Evento de tecnologia 2022
     800,
-    '04/01/2019'
+    '09/01/2022'
 );
 
 --
@@ -379,51 +208,41 @@ INSERT INTO rel_evento_empresa
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     1, -- CocaCola
-    2, -- Evento de Tecnologia 2021
-    5000,
-    '04/01/2021'
+    11, -- Evento de Arte 2022
+    2100,
+    '05/01/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     2, -- Digimart
-    2, -- Evento de Tecnologia 2021
-    5000,
-    '04/02/2021'
+    11, -- Evento de Arte 2022
+    2500,
+    '06/01/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     3, -- Capcom
-    2, -- Evento de Tecnologia 2021
-    5000,
-    '20/01/2021'
-);
-
---
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    1, -- CocaCola
-    3, -- Evento Filosofia 2019
-    2800,
-    '05/02/2019'
+    11, -- Evento de Arte 2022
+    1234,
+    '07/01/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     4, -- Global museum
-    3, -- Evento Filosofia 2019
+    11, -- Evento de Arte 2022
     500,
-    '03/02/2019'
+    '08/01/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     5, -- FundaVen
-    3, -- Evento Filosofia 2019
+    11, -- Evento de Arte 2022
     800,
-    '04/02/2019'
+    '09/01/2022'
 );
 
 --
@@ -431,195 +250,41 @@ INSERT INTO rel_evento_empresa
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     1, -- CocaCola
-    4, -- Evento Filosofia 2020
-    2000,
-    '05/02/2020'
+    12, -- Evento de Salud 2022
+    2100,
+    '05/05/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     2, -- Digimart
-    4, -- Evento Filosofia 2020
-    1500,
-    '06/02/2020'
+    12, -- Evento de Salud 2022
+    2500,
+    '06/05/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     3, -- Capcom
-    4, -- Evento Filosofia 2020
+    12, -- Evento de Salud 2022
     1234,
-    '05/02/2020'
+    '07/05/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     4, -- Global museum
-    4, -- Evento Filosofia 2020
+    12, -- Evento de Salud 2022
     500,
-    '03/02/2020'
+    '08/05/2022'
 );
 INSERT INTO rel_evento_empresa 
 (id_empresa, id_evento, dinero_aportado, fecha_aportado)
 VALUES(
     5, -- FundaVen
-    4, -- Evento Filosofia 2020
+    12, -- Evento de Salud 2022
     800,
-    '04/02/2020'
-);
-
---
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    1, -- CocaCola
-    5, -- Evento Filosofia 2021
-    1500,
-    '05/02/2020'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    2, -- Digimart
-    5, -- Evento Filosofia 2021
-    1500,
-    '06/02/2020'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    3, -- Capcom
-    5, -- Evento Filosofia 2021
-    1234,
-    '05/02/2020'
-);
-
---
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    1, -- CocaCola
-    6, -- Evento Arte 2019
-    900,
-    '05/02/2019'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    2, -- Digimart
-    6, -- Evento Arte 2019
-    700,
-    '06/01/2019'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    3, -- Capcom
-    6, -- Evento Arte 2019
-    1234,
-    '05/01/2019'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    4, -- Global museum
-    6, -- Evento Arte 2019
-    500,
-    '03/02/2019'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    5, -- FundaVen
-    6, -- Evento Arte 2019
-    800,
-    '04/02/2019'
-);
-
---
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    1, -- CocaCola
-    7, -- Evento Arte 2021
-    900,
-    '05/02/2021'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    2, -- Digimart
-    7, -- Evento Arte 2021
-    700,
-    '06/01/2021'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    3, -- Capcom
-    7, -- Evento Arte 2021
-    1234,
-    '05/01/2021'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    4, -- Global museum
-    7, -- Evento Arte 2021
-    500,
-    '03/02/2021'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    5, -- FundaVen
-    7, -- Evento Arte 2021
-    800,
-    '04/02/2021'
-);
-
---
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    4, -- Global museum
-    8, -- Evento Musica 2020
-    500,
-    '03/02/2020'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    5, -- FundaVen
-    8, -- Evento Musica 2020
-    800,
-    '04/02/2020'
-);
-
---
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    3, -- Capcom
-    9, -- Evento Ecologia 2020
-    569,
-    '05/01/2020'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    4, -- Global museum
-    9, -- Evento Ecologia 2020
-    500,
-    '03/02/2020'
-);
-INSERT INTO rel_evento_empresa 
-(id_empresa, id_evento, dinero_aportado, fecha_aportado)
-VALUES(
-    5, -- FundaVen
-    9, -- Evento Ecologia 2020
-    800,
-    '04/02/2020'
+    '09/05/2022'
 );
 
 -- Evento / Usuario -> Participante
@@ -627,108 +292,114 @@ VALUES(
 INSERT INTO participa 
 (id_usuario, id_evento)
 VALUES(
-    3, -- Cesar
-    1 -- Evento tecnologico 2019
+    3, -- jesus
+    10 -- Evento tecnologico 202
 );
 INSERT INTO participa 
 (id_usuario, id_evento)
 VALUES(
-    4, -- Edwin
-    1 -- Evento tecnologico 2019
-);
-
---
-INSERT INTO participa 
-(id_usuario, id_evento)
-VALUES(
-    3, -- Cesar
-    2 -- Evento tecnologico 2021
+    4, -- jesus
+    10 -- Evento tecnologico 202
 );
 INSERT INTO participa 
 (id_usuario, id_evento)
 VALUES(
-    4, -- Edwin
-    2 -- Evento tecnologico 2021
-);
-
---
-INSERT INTO participa 
-(id_usuario, id_evento)
-VALUES(
-    3, -- Cesar
-    3 -- Evento Filosofia 2019
+    5, -- maria
+    10 -- Evento tecnologico 202
 );
 INSERT INTO participa 
 (id_usuario, id_evento)
 VALUES(
-    4, -- Edwin
-    3 -- Evento Filosofia 2019
+    6, -- carlos
+    10 -- Evento tecnologico 202
+);
+INSERT INTO participa 
+(id_usuario, id_evento)
+VALUES(
+    7, -- jesus
+    10 -- Evento tecnologico 202
+);
+INSERT INTO participa 
+(id_usuario, id_evento)
+VALUES(
+    8, -- jessica
+    10 -- Evento tecnologico 202
 );
 
 --
 INSERT INTO participa 
 (id_usuario, id_evento)
 VALUES(
-    4, -- Edwin
-    4 -- Evento Filosofia 2020
+    3, -- cesar
+    11 -- Evento Arte 2022
+);
+INSERT INTO participa 
+(id_usuario, id_evento)
+VALUES(
+    4, -- edwin
+    11 -- Evento Arte 2022
+);
+INSERT INTO participa 
+(id_usuario, id_evento)
+VALUES(
+    5, -- maria
+    11 -- Evento Arte 2022
+);
+INSERT INTO participa 
+(id_usuario, id_evento)
+VALUES(
+    6, -- carlos
+    11 -- Evento Arte 2022
+);
+INSERT INTO participa 
+(id_usuario, id_evento)
+VALUES(
+    7, -- jesus
+    11 -- Evento Arte 2022
+);
+INSERT INTO participa 
+(id_usuario, id_evento)
+VALUES(
+    8, -- jessica
+    11 -- Evento Arte 2022
 );
 
 --
 INSERT INTO participa 
 (id_usuario, id_evento)
 VALUES(
-    3, -- Cesar
-    5 -- Evento Filosofia 2021
+    3, -- cesar
+    12 -- Evento Salud 2022
 );
 INSERT INTO participa 
 (id_usuario, id_evento)
 VALUES(
-    4, -- Edwin
-    5 -- Evento Filosofia 2021
-);
-
---
-INSERT INTO participa 
-(id_usuario, id_evento)
-VALUES(
-    3, -- Cesar
-    6 -- Evento Arte 2019
-);
-
---
-INSERT INTO participa 
-(id_usuario, id_evento)
-VALUES(
-    3, -- Cesar
-    7 -- Evento tecnologico 2021
-);
-
---
-INSERT INTO participa 
-(id_usuario, id_evento)
-VALUES(
-    3, -- Cesar
-    8 -- Evento Musica 2020
+    4, -- edwin
+    12 -- Evento Salud 2022
 );
 INSERT INTO participa 
 (id_usuario, id_evento)
 VALUES(
-    4, -- Edwin
-    8 -- Evento Musica 2020
-);
-
---
-INSERT INTO participa 
-(id_usuario, id_evento)
-VALUES(
-    3, -- Cesar
-    9 -- Evento Ecologia 2020
+    5, -- maria
+    12 -- Evento Salud 2022
 );
 INSERT INTO participa 
 (id_usuario, id_evento)
 VALUES(
-    4, -- Edwin
-    9 -- Evento Ecologia 2020
+    6, -- carlos
+    12 -- Evento Salud 2022
+);
+INSERT INTO participa 
+(id_usuario, id_evento)
+VALUES(
+    7, -- jesus
+    12 -- Evento Salud 2022
+);
+INSERT INTO participa 
+(id_usuario, id_evento)
+VALUES(
+    8, -- jessica
+    12 -- Evento Salud 2022
 );
 
 -- Evento / Usuario -> Usuario Expositor -> dicta
@@ -737,127 +408,23 @@ INSERT INTO dicta
 (id_usuario, id_evento, nombre_charla, valoracion)
 VALUES(
     1, -- Silvio
-    1, -- Evento tecnologico 2019
-    'Charla tecnologia 2019',
+    10, -- Evento tecnologico 2022
+    'Charla tecnologia 2022',
     5
 );
 INSERT INTO dicta 
 (id_usuario, id_evento, nombre_charla, valoracion)
 VALUES(
-    2, -- Justin
-    1, -- Evento tecnologico 2019
-    'Charla tecnologia 2019 (2)',
-    5
-);
-
---
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    1, -- Silvio
-    2, -- Evento tecnologico 2021
-    'Charla tecnologia 2021',
+    10, -- Jolene
+    11, -- Evento arte 2022
+    'Charla arte 2022',
     5
 );
 INSERT INTO dicta 
 (id_usuario, id_evento, nombre_charla, valoracion)
 VALUES(
-    2, -- Justin
-    2, -- Evento tecnologico 2021
-    'Charla tecnologia 2021 (2)',
-    3
-);
-
---
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    1, -- Silvio
-    3, -- Evento Filosofia 2019
-    'Charla Filosofia 2019',
-    2
-);
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    2, -- Justin
-    3, -- Evento Filosofia 2019
-    'Charla Filosofia 2019 (2)',
-    4
-);
-
---
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    1, -- Silvio
-    4, -- Evento Filosofia 2020
-    'Charla Filosofia 2020',
-    4
-);
-
---
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    1, -- Silvio
-    5, -- Evento Filosofia 2021
-    'Charla Filosofia 2021',
-    3
-);
-
---
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    1, -- Silvio
-    6, -- Evento Arte 2019
-    'Charla Arte 2019',
-    4
-);
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    2, -- Justin
-    6, -- Evento Arte 2019
-    'Charla Arte 2019 (2)',
-    3
-);
-
---
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    2, -- Justin
-    7, -- Evento Arte 2021
-    'Charla Arte 2021 (2)',
-    3
-);
-
---
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    1, -- Silvio
-    8, -- Evento Musica 2020
-    'Charla Musica 2020',
-    4
-);
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    2, -- Justin
-    8, -- Evento Musica 2020
-    'Charla Musica 2020 (2)',
-    5
-);
-
---
-INSERT INTO dicta 
-(id_usuario, id_evento, nombre_charla, valoracion)
-VALUES(
-    2, -- Justin
-    9, -- Evento Ecologia 2020
-    'Charla Ecologia 2020 (2)',
+    10, -- Jolene
+    12, -- Evento salud 2022
+    'Charla salud 2022',
     5
 );

@@ -3,7 +3,7 @@
     del evento donde realizaron su presentación, en eventos organizados por la
     Universidad Central de Venezuela.
 */
-
+EXPLAIN PLAN FOR
 SELECT DISTINCT usuario.id_usuario as ID,
        usuario.nombre as Nombre,
        usuario.apellido as Apellido,
@@ -23,6 +23,7 @@ WHERE universidad.acronimo = 'UCV' AND usuario.type_user = 'expositor'
     y la cantidad aportada al evento.
 */
 
+EXPLAIN PLAN FOR
 SELECT DISTINCT empresa.id_empresa,
        empresa.nombre,
        evento.nombre,
@@ -35,3 +36,10 @@ WHERE empresa.tipo = 'privada'
     AND area_conocimiento.nombre = 'Tecnologia'
     AND evento.fecha_inicio BETWEEN '01-01-2019' AND '30-12-2021'
 ;
+
+
+-- Consultar el explain plan
+SET LINESIZE 130
+SET PAGESIZE 0
+SELECT * 
+FROM   TABLE(DBMS_XPLAN.DISPLAY);
